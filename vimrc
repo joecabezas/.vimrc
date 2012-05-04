@@ -25,6 +25,9 @@ set autoread
 " Allow backspacing over the start of insert, autoindent and line breaks:
 set backspace=start,indent,eol
 
+" Clear the PAGER environment variable inside of Vim:
+let $PAGER=''
+
 " Colors
 """"""""
 
