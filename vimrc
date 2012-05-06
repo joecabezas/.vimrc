@@ -4,7 +4,7 @@ call pathogen#infect()
 """""""""
 
 " Location of *.swp files:
-set directory=/tmp/
+"set directory=/tmp/
 
 " Avoid backup (*.~) files:
 set nobackup
