@@ -1,3 +1,5 @@
+call pathogen#infect()
+
 " Backups
 """""""""
 
@@ -11,7 +13,7 @@ set nobackup
 """"""""""
 
 " Reload .vimrc when is edited:
-autocmd! BufWritePost vimrc source /etc/vimrc
+autocmd! BufWritePost vimrc source ~/.vimrc
 
 " Turn off vi compatibility. Needed by some scripts:
 set nocompatible
@@ -33,6 +35,7 @@ let $PAGER=''
 
 " Enable 256 colors support
 set t_Co=256
+"let g:solarized_termcolor=256
 
 " Set background style:
 set background=dark
@@ -241,3 +244,4 @@ autocmd BufNewFile,BufRead *.js TagbarOpen
 
 " Opens Tagbar each time Python source code is loaded:
 autocmd BufNewFile,BufRead *.py TagbarOpen
+
